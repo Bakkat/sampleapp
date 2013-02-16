@@ -34,4 +34,7 @@ Sampleapp::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  #para poder mandar la direccion de edicion por mail. Activar en Production dsp.
+  config.action_mailer.default_url_options = { :host => "localhost:3000" }
 end
